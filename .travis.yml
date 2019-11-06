@@ -1,0 +1,15 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - "stable"
+
+services:
+  - postgresql
+
+notifications:
+  email: false
+
+install:
+  - npm install
