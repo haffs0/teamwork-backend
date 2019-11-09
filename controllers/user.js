@@ -1,7 +1,7 @@
 const pool = require('../models/queries');
 
 
-exports.createDummy = (request, response, next) => {
+exports.createUser = (request, response, next) => {
   pool.connect((err, client, done) => {
     if (err) {
       console.log(`not able to get connection ${ err }`);

@@ -1,11 +1,11 @@
 const express = require('express');
 
 const router = express.Router();
-const stuffCtrl = require('../controllers/stuff');
+const userCtrl = require('../controllers/user');
 
 
 
-router.get('/dummy', stuffCtrl.createDummy);
+router.get('/create-user', userCtrl.createUser);
 
 
 module.exports = router;
